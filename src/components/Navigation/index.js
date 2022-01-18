@@ -23,49 +23,53 @@ const styles = {
     }
 }
 
-const Navigation = ({ currentPage, handlePageChange }) => {
+const Navigation = ({ currentPage }) => {
 
     const [setToggleMenu] = useState(false);
 
-    const handlePageClick = (page) => {
+    const [page, changePage] = useState(currentPage);
+
+
+    const handlePageClick = (newPage) => {
         setToggleMenu(false);
-        handlePageChange(page);
+        changePage(newPage);
     }
+    
     return (
         <div className="navdiv">
             <ul style={styles.ul}>
                 <li style={styles.li}>
                     <a style={styles.a}
-                        href="#About"
+                        href="/"
                         onClick={() => handlePageClick("About")}
-                        className={currentPage === "About" ? "nav-link active" : "nav-link"}
+                        className={page === "About" ? "nav-link active" : "nav-link"}
                     >
                         About Me
                     </a>
                 </li>
                 <li style={styles.li}>
                     <a style={styles.a}
-                        href="#Projects"
+                        href="/projects"
                         onClick={() => handlePageClick("Projects")}
-                        className={currentPage === "Projects" ? "nav-link active" : "nav-link"}
+                        className={page === "Projects" ? "nav-link active" : "nav-link"}
                     >
                         Projects
                     </a>
                 </li>
                 <li style={styles.li}>
                     <a style={styles.a}
-                        href="#Resume"
+                        href="/resume"
                         onClick={() => handlePageClick("Resume")}
-                        className={currentPage === "Resume" ? "nav-link active" : "nav-link"}
+                        className={page === "Resume" ? "nav-link active" : "nav-link"}
                     >
                         Resume
                     </a>
                 </li>
                 <li style={styles.li}>
                     <a style={styles.a}
-                        href="#Contact"
+                        href="/contact"
                         onClick={() => handlePageClick("Contact")}
-                        className={currentPage === "Contact" ? "nav-link active" : "nav-link"}
+                        className={page === "Contact" ? "nav-link active" : "nav-link"}
                     >
                         Contact
                     </a>

@@ -1,5 +1,4 @@
 import React from 'react';
-import Navigation from '../Navigation/index.js';
 
 const styles = {
     h1: {
@@ -16,7 +15,6 @@ const Header = () => {
                 <h1 className="m-0" style={styles.h1}>
                     Amelia Hooper - Tech Developer Portfolio
                 </h1>
-                <Navigation />
             </div>
         </header>
     );
