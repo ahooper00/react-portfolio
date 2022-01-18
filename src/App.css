@@ -1,6 +1,10 @@
 body {
-    min-height: 100%;
-    line-height: 1;
-    font-family: 'Courier New', Courier, monospace;
-    background-color: rgb(241, 215, 191);
-  }
+  min-height: 100%;
+  line-height: 1;
+  font-family: 'Courier New', Courier, monospace;
+  background-color: #F0E1DE;
+}
+
+h1 {
+  color: #381f1e;
+}

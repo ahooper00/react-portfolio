@@ -19,7 +19,8 @@ const styles = {
     li: {
         textDecoration: 'none',
         fontWeight: 'bold',
-        fontSize: '20px'
+        fontSize: '20px',
+        color: '#381f1e'
     }
 }
 
