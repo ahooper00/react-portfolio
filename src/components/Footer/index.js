@@ -1,29 +1,47 @@
 import React from 'react';
-import logo from '../../assets/github-logo.png'
+import githubLogo from '../../assets/github-logo.png';
+import linkedLogo from '../../assets/linkedin-logo.png';
+
 const styles = {
     logo: {
-        width: 40,
-        height: 40,
-        margin: 40,
+        width: '60px',
+        height: 'auto',
+        margin: '40px',
         cursor: "pointer",
     },
+    container: {
+        width: '60px',
+        display: 'flex',
+        justifyContent: 'space-between',
+        alignItems: 'center'
+    }
 };
 
 const Footer = () => {
     return (
-        <footer className="w-100 mt-auto text-dark p-4">
-            <div className="github-container mb-5">
-                <a href="https://github.com/ahooper00">GitHub</a>
-                <img 
-                style={styles.logo}
-                src={logo}
-                alt="github"
-                className="githubLogo"
-                ></img>
+        <footer className="footer" style={styles.container}>
+            <div className="container">
+                <a href="https://github.com/ahooper00">
+                    <img
+                        style={styles.logo}
+                        src={githubLogo}
+                        alt="github"
+                        className="githubLogo"
+                    ></img>
+                </a>
             </div>
-            <div className="linkedin-container mb-5">
 
+            <div className="container" style={styles.container}>
+                <a href="https://www.linkedin.com/in/amelia-hooper-3763931a5/">
+                    <img
+                        style={styles.logo}
+                        src={linkedLogo}
+                        alt="linkedin"
+                        className="linkedLogo"
+                    ></img>
+                </a>
             </div>
+
         </footer>
     )
 };
