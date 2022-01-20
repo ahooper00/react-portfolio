@@ -15,8 +15,8 @@ const styles = {
         flexWrap: 'wrap',
         borderRadius: '5px',
         boxShadow: '10px 10px 5px darkslategray',
-        backgroundColor: '#83BDC0',
-        margin: '15px 15px',
+        backgroundColor: '#F0E1DE',
+        margin: ' 0px 15px',
         padding: '20px',
         width: '80%'
     },
@@ -26,9 +26,10 @@ const styles = {
         lineHeight: '20px'
     },
     img: {
-        width: '400px',
+        width: '300px',
         height: 'auto',
-        flexDirection: 'row'
+        flexDirection: 'row',
+        paddingLeft: '40px'
     }
 }
 

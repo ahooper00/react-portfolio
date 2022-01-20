@@ -2,16 +2,19 @@ import React from 'react';
 import Mme from '../../assets/mme.jpeg';
 import TeamProfile from '../../assets/team-profile.png';
 import '../../index.css';
+import EmployeeTracker from '../../assets/employee-tracker.png';
+import EmployeeTrackerTwo from '../../assets/employee-tracker-2.png';
+import pwa from '../../assets/pwa.png';
 
 const styles = {
     projectDiv: {
-        width: '300px',
+        width: '400px',
         display: 'flex',
         flexWrap: 'wrap',
         flexDirection: 'column'
     },
     img: {
-        width: '200',
+        width: '350px',
         height: 'auto',
         display: 'flex'
     }
@@ -80,6 +83,52 @@ const projects = () => {
                     <strong>GitHub:</strong> <a href="https://github.com/ahooper00/PWA-text-editor" alt="Github repository">GitHub Repository</a>
                     </p>
                 </div>
+                <img
+                    src={pwa}
+                    alt="pwa screenshot"
+                    className="Img"
+                ></img>
+            </section>
+
+            <section className="projectSection">
+                <div className="projectDiv" style={styles.projectDiv}>
+                    <h4>
+                        Regex Tutorial
+                    </h4>
+                    <p>
+                    The regex covered in this tutorial allows for email validation. This email regex comprises of a group of characters 
+                    that are typical of the standard email address. Email validation is an important part of the UX of a web application, 
+                    and ensuring only valid information is inputted in web forms and sent to the server is vital.
+                    <br></br>
+                    <strong>GitHub:</strong> <a href="https://github.com/ahooper00/regex-tutorial" alt="Github repository">GitHub Repository</a>
+                    </p>
+                </div>
+            </section>
+
+            <section className="projectSection">
+                <div className="projectDiv" style={styles.projectDiv}>
+                    <h4>
+                        MySQL Employee Tracker
+                    </h4>
+                    <p>
+                    A command-line-input application that allows a business owner to view employees, departments and roles in the company. 
+                    The user can simply view departments, employees and the roles available in a company, and also update employee roles. 
+                    It uses Node.js to run, and mysql to store company data.
+                    <br></br>
+                    <strong>GitHub:</strong> <a href="https://github.com/ahooper00/employee-tracker-mysql" alt="Github repository">GitHub Repository</a>
+                    </p>
+                </div>
+                <img
+                    src={EmployeeTracker}
+                    alt="Employee tracker screenshot"
+                    className="Img"
+                ></img>
+                <br></br>
+                <img
+                    src={EmployeeTrackerTwo}
+                    alt="Employee tracker screenshot"
+                    className="Img"
+                ></img>
             </section>
         </div>
     )
