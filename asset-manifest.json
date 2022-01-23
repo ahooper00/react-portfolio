@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/react-portfolio/static/css/main.e7d892d3.chunk.css",
+    "main.js": "/react-portfolio/static/js/main.22997350.chunk.js",
+    "main.js.map": "/react-portfolio/static/js/main.22997350.chunk.js.map",
+    "runtime-main.js": "/react-portfolio/static/js/runtime-main.3cfbc2ec.js",
+    "runtime-main.js.map": "/react-portfolio/static/js/runtime-main.3cfbc2ec.js.map",
+    "static/js/2.2a3ad175.chunk.js": "/react-portfolio/static/js/2.2a3ad175.chunk.js",
+    "static/js/2.2a3ad175.chunk.js.map": "/react-portfolio/static/js/2.2a3ad175.chunk.js.map",
+    "index.html": "/react-portfolio/index.html",
+    "static/css/main.e7d892d3.chunk.css.map": "/react-portfolio/static/css/main.e7d892d3.chunk.css.map",
+    "static/js/2.2a3ad175.chunk.js.LICENSE.txt": "/react-portfolio/static/js/2.2a3ad175.chunk.js.LICENSE.txt",
+    "static/media/employee-tracker-2.232fa8fb.png": "/react-portfolio/static/media/employee-tracker-2.232fa8fb.png",
+    "static/media/employee-tracker.3edca801.png": "/react-portfolio/static/media/employee-tracker.3edca801.png",
+    "static/media/img-of-me.abc28639.jpeg": "/react-portfolio/static/media/img-of-me.abc28639.jpeg",
+    "static/media/linkedin-logo.75a3164b.png": "/react-portfolio/static/media/linkedin-logo.75a3164b.png",
+    "static/media/mme.4ba8f956.jpeg": "/react-portfolio/static/media/mme.4ba8f956.jpeg",
+    "static/media/App.css": "/react-portfolio/static/media/plant-background.be841283.jpeg",
+    "static/media/pwa.ef78c597.png": "/react-portfolio/static/media/pwa.ef78c597.png",
+    "static/media/team-profile.c3268356.png": "/react-portfolio/static/media/team-profile.c3268356.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.3cfbc2ec.js",
+    "static/js/2.2a3ad175.chunk.js",
+    "static/css/main.e7d892d3.chunk.css",
+    "static/js/main.22997350.chunk.js"
+  ]
+}
