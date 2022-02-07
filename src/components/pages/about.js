@@ -3,7 +3,7 @@ import image from '../../assets/img-of-me.jpeg';
 
 const styles = {
     aboutDiv: {
-        width: '60%',
+        width: '70%',
         display: 'flex',
         flexWrap: 'wrap',
         flexDirection: 'column'
@@ -22,8 +22,8 @@ const styles = {
     },
     p: {
         fontFamily: "'Courier New', Courier, monospace",
-        fontSize: '15px',
-        lineHeight: '20px'
+        lineHeight: '20px',
+        width: '100%'
     },
     img: {
         width: '300px',
@@ -54,7 +54,7 @@ const about = () => {
                 style={styles.img}
                 src={image}
                 alt="pic of me"
-                className="image"
+                className="img-fluid"
                 ></img>
             </div>
         </section>

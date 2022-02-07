@@ -6,6 +6,47 @@ body {
   background-size: auto;
 }
 
+p {
+  display: block;
+  overflow: auto;
+  margin-right: auto;
+  width : 85%;
+}
+
+.navbar {
+  text-align: center;
+}
+
 h1 {
   color: #381f1e;
+}
+
+@media (min-width: 500px) {  
+  h1 {font-size: 16px}
+  h4 {font-size: 12px}
+  p {font-size: 10px;}
+}
+
+@media (min-width: 768px) {  
+  h1 {font-size: 32px}
+  h4 {font-size: 14px}
+  p {font-size: 12px}
+}
+
+@media (min-width: 992px) { 
+  h1 {font-size: 40px}
+  h4 {
+    font-size: 14px;
+    width: 75%;
+  }
+  p {
+    font-size: 14px;
+    width: 75%;
+  }
+}
+
+@media (min-width: 1200px) {  
+  h1 {font-size: 48px}   
+  h4 {font-size: 18px}
+  p {font-size: 16px}
 }

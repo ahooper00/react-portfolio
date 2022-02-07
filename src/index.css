@@ -1,5 +1,5 @@
 .projectSection {
-    flex: 1 0 100%;
+    flex: 1 1 100%;
     display: inline-flex;
     justify-content: space-between;
     flex-direction: column;

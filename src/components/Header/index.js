@@ -1,9 +1,9 @@
 import React from 'react';
+import '../../App.css';
 
 const styles = {
     h1: {
         fontFamily: "'Courier New', Courier, monospace",
-        fontSize: '3rem',
         textAlign: 'center'
     }
 }

@@ -1,4 +1,7 @@
 import React, { useState } from 'react';
+import Button from 'react-bootstrap/Button';
+import '../../App.css';
+import { Link } from 'react-router-dom';
 
 const styles = {
     navdiv : {
@@ -10,7 +13,8 @@ const styles = {
         listStyleType: 'none',
         display: 'flex',
         justifyContent: 'center',
-        fontFamily: "'Courier New', Courier, monospace"
+        fontFamily: "'Courier New', Courier, monospace",
+        flexWrap: 'wrap'
     },
     a: {
         textDecoration: 'none',
@@ -20,7 +24,8 @@ const styles = {
         textDecoration: 'none',
         fontWeight: 'bold',
         fontSize: '20px',
-        color: '#381f1e'
+        color: '#381f1e',
+        flexWrap: 'wrap'
     }
 }
 
@@ -37,43 +42,39 @@ const Navigation = ({ currentPage }) => {
     }
     
     return (
-        <div className="navdiv">
+        <div className="navbar navbar-expand-lg justify-content-center container-fluid">
             <ul style={styles.ul}>
                 <li style={styles.li}>
-                    <a style={styles.a}
-                        href="/"
+                    <Link to="/" style={styles.a}
                         onClick={() => handlePageClick("About")}
                         className={page === "About" ? "nav-link active" : "nav-link"}
                     >
-                        About Me
-                    </a>
+                        <Button variant="secondary" className="mx-2">About Me</Button>
+                    </Link>
                 </li>
                 <li style={styles.li}>
-                    <a style={styles.a}
-                        href="/projects"
+                    <Link to="/projects" style={styles.a}
                         onClick={() => handlePageClick("Projects")}
                         className={page === "Projects" ? "nav-link active" : "nav-link"}
                     >
-                        Projects
-                    </a>
+                        <Button variant="secondary" className="mx-2">Projects</Button>
+                    </Link>
                 </li>
                 <li style={styles.li}>
-                    <a style={styles.a}
-                        href="/resume"
+                    <Link to="/resume" style={styles.a}
                         onClick={() => handlePageClick("Resume")}
                         className={page === "Resume" ? "nav-link active" : "nav-link"}
                     >
-                        Resume
-                    </a>
+                        <Button variant="secondary" className="mx-2">Resume</Button>
+                    </Link>
                 </li>
                 <li style={styles.li}>
-                    <a style={styles.a}
-                        href="/contact"
+                    <Link to="/contact" style={styles.a}
                         onClick={() => handlePageClick("Contact")}
                         className={page === "Contact" ? "nav-link active" : "nav-link"}
                     >
-                        Contact
-                    </a>
+                        <Button variant="secondary" className="mx-2">Contact</Button>
+                    </Link>
                 </li>
             </ul>
         </div>
